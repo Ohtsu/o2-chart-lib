@@ -203,7 +203,7 @@ $ npm install o2-chart-lib --save
 
  Each chart needs its own data in Json format. 
 
-  - ***Sample GraphData for Line*** 
+  - ***GraphData for Line*** 
 
 ```json
 		lineDataJson =
@@ -301,6 +301,13 @@ $ npm install o2-chart-lib --save
 		};
 
 ```
+
+  - ***Visual for Line*** 
+
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Line01.png" width= "640" >
+
+
 
 ## Consuming this library
 
