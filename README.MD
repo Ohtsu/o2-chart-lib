@@ -308,6 +308,114 @@ $ npm install o2-chart-lib --save
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Line01.png" width= "640" >
 
 
+  - ***GraphData for Bar*** 
+
+```json
+
+		barDataJson =
+		{
+			"series":[
+				"English",
+				"Math"	
+			],
+			"data":[
+				{
+					"x": "suzuki",
+					"y": [92,73],
+				},
+				{
+					"x": "inoue",
+					"y": [69,45],
+				},
+				{
+					"x": "sato",
+					"y": [70,100],
+				},
+				{
+					"x": "tanaka",
+					"y": [43,66],
+				},
+				{
+					"x": "ida",
+					"y": [60,70],
+				},
+				{
+					"x": "kato",
+					"y": [55,63],
+				},
+			],
+		};
+
+
+```
+
+  - ***Visual for Bar*** 
+
+ <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Bar01.png" width= "640" >
+
+
+  - ***GraphData for Bar*** 
+
+```json
+		barDataJson =
+		{
+			"series":[
+				"English",
+				"Math"	
+			],
+			"data":[
+				{
+					"x": "suzuki",
+					"y": [92,73],
+				},
+				{
+					"x": "inoue",
+					"y": [69,45],
+				},
+				{
+					"x": "sato",
+					"y": [70,100],
+				},
+				{
+					"x": "tanaka",
+					"y": [43,66],
+				},
+				{
+					"x": "ida",
+					"y": [60,70],
+				},
+				{
+					"x": "kato",
+					"y": [55,63],
+				},
+			],
+		};
+
+```
+
+  - ***Visual for Bar*** 
+
+
+  - ***GraphData for Bar*** 
+
+```json
+
+```
+
+  - ***Visual for Bar*** 
+
+
+  - ***GraphData for Bar*** 
+
+```json
+
+```
+
+  - ***Visual for Bar*** 
+
+
+
+
 
 ## Consuming this library
 
