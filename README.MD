@@ -693,16 +693,29 @@ $ npm install o2-chart-lib --save
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Tree01.png" width= "640" >
 
 
-  - ***Sample GraphData for *** 
+  - ***Sample GraphData for PackLayout*** 
 
 ```json
+
+		packLayoutDataJson = {
+			"name":"United States", "value" :281421906,
+			"children" : [
+				{"name":"California", "value" :33871648},
+				{"name":"Texas", "value" :20851820},
+				{"name":"New York", "value" :18976457},
+				{"name":"Florida", "value" :15982378},
+				{"name":"Illinois", "value" :12419293},
+				{"name":"Pennsylvania", "value" :12281054},
+				{"name":"Ohio", "value" :11353140},
+				]
+		}
 
 
 ```
 
-  - ***Visual for *** 
+  - ***Visual for PackLayout*** 
 
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/PackLayout01.png" width= "640" >
 
 
   - ***Sample GraphData for *** 
