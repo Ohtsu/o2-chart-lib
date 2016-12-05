@@ -3,10 +3,10 @@
 
 _o2-chart-lib_ is a chart library using d3.js (version 4) for Angular2 written by TypeScript2.
 
-"Demo Page",
+_Demo Page_,
 <https://ohtsu.github.io/o2-chart/>
 
-"Sample Program for setting date",
+_Sample Program for setting date_,
 <https://github.com/ohtsu/o2-chart/>
 
 ## Overview 
