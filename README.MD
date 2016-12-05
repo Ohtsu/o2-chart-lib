@@ -23,19 +23,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { O2ChartComponent,ChartConst } from 'o2-chart-lib';
 
-// Import your library
-import { SampleModule } from 'o2-chart-lib';
 
 @NgModule({
   declarations: [
+    O2ChartComponent,
     AppComponent
   ],
   imports: [
     BrowserModule,
-
-    // Specify your library as an import
-    LibraryModule
+    O2ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -50,7 +48,8 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<!-- You need specify chart type,config data, graph data,width and height as follows -->
+<o2-chart [chartType]="barTypeName" [configData]="configData"  [graphData]="barDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></o2-chart>
 ```
 
 ## Development
