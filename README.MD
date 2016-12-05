@@ -1,13 +1,13 @@
 # _o2-chart-lib_ Chart Library for Angular2 by TypeScript2
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-"o2-chart-lib" is a chart library using d3.js (version 4) for Angular2 written by TypeScript2.
+_o2-chart-lib_ is a chart library using d3.js (version 4) for Angular2 written by TypeScript2.
 
 "Demo Page",
 <https://ohtsu.github.io/o2-chart/>
 
 ## Overview 
-   - "o2-chart" is a wrapper library of d3.js (version 4) for Angular2
+   - _o2-chart-lib_ is a wrapper library of d3.js (version 4) for Angular2
    - 12 main charts are supported
 
     (Line,Bar,Pie,ScatterPlot,Histogram,Stack Bar, Geo Map, Geo Orthographic, Tree, Pack Layout, Choropleth,Force)
