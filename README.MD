@@ -120,9 +120,40 @@ Once the library is imported, you can use its component in your Angular applicat
 ## Version
 
    - o2-chart-lib : 0.1
-   - Angular2   : 2.0.0
-   - TypeScript : 2.0.2
-   - d3.js      : 4.4.0
+   - Angular2     : 2.0.0
+   - TypeScript   : 2.0.2
+   - d3.js        : 4.4.0
+
+
+
+## Reference
+
+- "データビジュアライゼーションのためのD3.js徹底入門 Webで魅せるグラフ&チャートの作り方",2014/6/6,by 古籏 一浩, 
+<http://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=search-alias%3Daps&field-keywords=ISBN978-4-7973-6886-4&rh=i%3Aaps%2Ck%3AISBN978-4-7973-6886-4>
+
+- "D3.js by Example",2015/12/29,by Michael Heydt
+<http://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=search-alias%3Daps&field-keywords=ISBN978-1-78528-008-5&rh=i%3Aaps%2Ck%3AISBN978-1-78528-008-5>
+
+- "Mastering D3.js",2014/8/25,by Pablo Navarro,
+<http://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=search-alias%3Daps&field-keywords=ISBN978-1-78328-627-0&rh=i%3Aaps%2Ck%3AISBN978-1-78328-627-0>
+
+- "Data Visualization With D3 and Angularjs",2015/4/27,by Christoph Korner,
+<http://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=search-alias%3Daps&field-keywords=ISBN978-1-78439-848-4&rh=i%3Aaps%2Ck%3AISBN978-1-78439-848-4>
+
+- "Mastering TypeScript",2015/4/23,by Nathan Rozentals,
+<http://www.amazon.co.jp/s/ref=nb_sb_noss?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&url=search-alias%3Daps&field-keywords=ISBN978-1-78439-966-5&rh=i%3Aaps%2Ck%3AISBN978-1-78439-966-5>
+
+- "D3 Tips and Tricks v4.x",by Malcolm Maclean,Leanpub,
+<https://leanpub.com/d3-t-and-t-v4/read>
+
+
+## Change Log
+
+ - 2016.12.5 version 0.1 uploaded 
+
+## Copyright
+
+copyright 2016 by Shuichi Ohtsu (DigiPub Japan)
 
 
 ## License
