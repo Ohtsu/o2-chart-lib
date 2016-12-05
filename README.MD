@@ -357,6 +357,29 @@ $ npm install o2-chart-lib --save
   - ***Sample GraphData for Pie*** 
 
 ```json
+	
+		pieDataJson =
+		{
+			"data":[
+				{
+					"name": "software",
+					"value":30,
+				},
+				{
+					"name": "hardware",
+					"value":25
+				},
+				{
+					"name": "device",
+					"value":16
+				},
+				{
+					"name": "others",
+					"value":4
+				},
+			],
+		};
+
 
 ```
 
