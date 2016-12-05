@@ -42,9 +42,9 @@ $ npm install o2-chart-lib --save
 
 ## Chart Data
 
- There are two types of data:"configData","graphData".
+ There are two types of data:**configData**,**graphData**.
  
- - configData
+ - **configData**
  
  This is a common setting data of all charts. In this file, you can set info as follows.
  
@@ -68,7 +68,7 @@ $ npm install o2-chart-lib --save
  
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/DisplayLayout01.png" width= "640" >
  
- - graphData
+ - **graphData**
 
  Each chart needs its own data in Json format. You can understand the format easily by referencing to the Json Data. For example, if you want to know Line chart data format, please refer to "this.lineDataJson" in app.components.ts.
 
