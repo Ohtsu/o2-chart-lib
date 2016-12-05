@@ -387,7 +387,7 @@ $ npm install o2-chart-lib --save
 
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Pie01.png" width= "640" >
 
-  - ***GraphData for ScatterPlot*** 
+  - ***Sample GraphData for ScatterPlot*** 
 
 ```json
 		
@@ -436,7 +436,7 @@ $ npm install o2-chart-lib --save
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ScatterPlot01.png" width= "640" >
 
 
-  - ***GraphData for Histogram*** 
+  - ***Sample GraphData for Histogram*** 
 
 ```json
 
@@ -463,6 +463,266 @@ $ npm install o2-chart-lib --save
   - ***Visual for Histogram*** 
 
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+
+  - ***Sample GraphData for StackBar*** 
+
+```json
+
+		stackBarDataJson =
+		{
+			"config":{
+				"timeFormat":"%Y",
+			},
+			"series":[
+				"year",
+				"sell",
+			],
+			"data":[
+				{
+					"name": "software",
+					"value":[
+						{
+							"x":"2010",
+							"y":18
+						},
+						{
+							"x":"2011",
+							"y":22
+						},
+						{
+							"x":"2012",
+							"y":30
+						},
+						{
+							"x":"2013",
+							"y":31
+						},
+					]
+				},
+				{
+					"name": "hardware",
+					"value":[
+						{
+							"x":"2010",
+							"y":15
+						},
+						{
+							"x":"2011",
+							"y":16
+						},
+						{
+							"x":"2012",
+							"y":10
+						},
+						{
+							"x":"2013",
+							"y":21
+						},
+					]
+				},
+				{
+					"name": "device",
+					"value":[
+						{
+							"x":"2010",
+							"y":25
+						},
+						{
+							"x":"2011",
+							"y":26
+						},
+						{
+							"x":"2012",
+							"y":30
+						},
+						{
+							"x":"2013",
+							"y":31
+						},
+					]
+				},
+				{
+					"name": "others",
+					"value":[
+						{
+							"x":"2010",
+							"y":5
+						},
+						{
+							"x":"2011",
+							"y":16
+						},
+						{
+							"x":"2012",
+							"y":20
+						},
+						{
+							"x":"2013",
+							"y":41
+						},
+					]
+				},
+			],
+		};
+
+
+```
+
+  - ***Visual for StackBar*** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/StackBar01.png" width= "640" >
+
+
+
+  - ***Sample GraphData for GeoMap*** 
+
+```json
+	
+		geoMapDataJson = 
+		{
+			"map":{
+					"baseGeoDataUrl":"https://raw.githubusercontent.com/Ohtsu/data/master/o2-chart/world.geojson",
+					"scale":75,
+					"keyDataName":"features",
+					"targetPropertyName":"properties.name",
+			},
+			"data":[
+				{
+					"name":"Australia",
+					"color":"red"
+				},
+				{
+					"name":"Antarctica",
+					"color":"white"
+				},
+				{
+					"name":"Japan",
+					"color":"blue"
+				},
+			],
+		};
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/GeoMap01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+  - ***Sample GraphData for *** 
+
+```json
+
+
+```
+
+  - ***Visual for *** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+
+
+
+
+
 
 
 
