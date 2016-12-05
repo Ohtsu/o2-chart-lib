@@ -1036,54 +1036,6 @@ $ npm install o2-chart-lib --save
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Force01.png" width= "640" >
 
 
-  - ***Sample GraphData for *** 
-
-```json
-
-
-```
-
-  - ***Visual for *** 
-
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
-
-
-  - ***Sample GraphData for *** 
-
-```json
-
-
-```
-
-  - ***Visual for *** 
-
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
-
-
-  - ***Sample GraphData for *** 
-
-```json
-
-
-```
-
-  - ***Visual for *** 
-
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
-
-
-  - ***Sample GraphData for *** 
-
-```json
-
-
-```
-
-  - ***Visual for *** 
-
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
-
-
 
 
 
