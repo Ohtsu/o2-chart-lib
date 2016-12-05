@@ -203,7 +203,7 @@ $ npm install o2-chart-lib --save
 
  Each chart needs its own data in Json format. 
 
-  - ***GraphData for Line*** 
+  - ***Sample GraphData for Line*** 
 
 ```json
 		lineDataJson =
@@ -308,7 +308,7 @@ $ npm install o2-chart-lib --save
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Line01.png" width= "640" >
 
 
-  - ***GraphData for Bar*** 
+  - ***Sample GraphData for Bar*** 
 
 ```json
 
@@ -354,65 +354,92 @@ $ npm install o2-chart-lib --save
  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Bar01.png" width= "640" >
 
 
-  - ***GraphData for Bar*** 
+  - ***Sample GraphData for Pie*** 
 
 ```json
-		barDataJson =
+
+```
+
+  - ***Visual for Pie*** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Pie01.png" width= "640" >
+
+  - ***GraphData for ScatterPlot*** 
+
+```json
+		
+		scatterPlotDataJson =
 		{
 			"series":[
-				"English",
-				"Math"	
+				"seriesA",
+				"seriesB",
+				"seriesC"	
 			],
 			"data":[
 				{
-					"x": "suzuki",
-					"y": [92,73],
+					"name": "suzuki",
+					"value":[
+						{"x":30,"y":40,"r":5},   
+						{"x":120,"y":115,"r":10},   
+						{"x":125,"y":90,"r":2},   
+						{"x":150,"y":160,"r":1},   
+						{"x":150,"y":160,"r":3},   
+						{"x":128,"y":215,"r":5},   
+						{"x":130,"y":40,"r":15},   
+						{"x":220,"y":115,"r":25},   
+					]
 				},
 				{
-					"x": "inoue",
-					"y": [69,45],
-				},
-				{
-					"x": "sato",
-					"y": [70,100],
-				},
-				{
-					"x": "tanaka",
-					"y": [43,66],
-				},
-				{
-					"x": "ida",
-					"y": [60,70],
-				},
-				{
-					"x": "kato",
-					"y": [55,63],
+					"name": "inoue",
+					"value":[
+						{"x":130,"y":140,"r":5},   
+						{"x":20,"y":15,"r":10},   
+						{"x":25,"y":190,"r":2},   
+						{"x":250,"y":60,"r":1},   
+						{"x":50,"y":60,"r":3},   
+						{"x":28,"y":15,"r":5},   
+						{"x":230,"y":140,"r":15},   
+						{"x":20,"y":215,"r":25},
+					]   
 				},
 			],
 		};
 
+
 ```
 
-  - ***Visual for Bar*** 
+  - ***Visual for ScatterPlot*** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/ScatterPlot01.png" width= "640" >
 
 
-  - ***GraphData for Bar*** 
+  - ***GraphData for Histogram*** 
 
 ```json
 
+		histogramDataJson =
+		{
+			"range":[0,100],
+			"bins": [0,10,20,30,40,50,60,70,80,90,100],
+			"data":[
+				50,95,60,44,60,50,35,20,10,8,
+				56,70,65,42,22,33,40,53,52,89,
+				90,55,50,55,65,72,45,35,15,45,
+				50,95,60,44,60,50,35,20,10,8,
+				56,70,65,42,22,33,40,53,52,89,
+				90,55,50,55,65,72,45,35,15,45,
+				50,95,60,44,60,50,35,20,10,8,
+				56,70,65,42,22,33,40,53,52,89,
+				90,55,50,55,65,72,45,35,15,45,
+			],
+		};
+	
+
 ```
 
-  - ***Visual for Bar*** 
+  - ***Visual for Histogram*** 
 
-
-  - ***GraphData for Bar*** 
-
-```json
-
-```
-
-  - ***Visual for Bar*** 
-
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
 
 
 
