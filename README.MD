@@ -201,9 +201,106 @@ $ npm install o2-chart-lib --save
 
  - **graphData**
 
- Each chart needs its own data in Json format. You can understand the format easily by referencing to the Json Data. For example, if you want to know Line chart data format, please refer to "this.lineDataJson" in app.components.ts.
+ Each chart needs its own data in Json format. 
 
+- ***Sample GraphData for Line *** 
 
+```json
+		lineDataJson =
+		{
+			"series":[
+				"year",
+				"sell",
+			],
+			"data":[
+				{
+					"name": "software",
+					"value":[
+						{
+							"x":"2010",
+							"y":18
+						},
+						{
+							"x":"2011",
+							"y":22
+						},
+						{
+							"x":"2012",
+							"y":30
+						},
+						{
+							"x":"2013",
+							"y":31
+						},
+					]
+				},
+				{
+					"name": "hardware",
+					"value":[
+						{
+							"x":"2010",
+							"y":15
+						},
+						{
+							"x":"2011",
+							"y":16
+						},
+						{
+							"x":"2012",
+							"y":10
+						},
+						{
+							"x":"2013",
+							"y":21
+						},
+					]
+				},
+				{
+					"name": "device",
+					"value":[
+						{
+							"x":"2010",
+							"y":25
+						},
+						{
+							"x":"2011",
+							"y":26
+						},
+						{
+							"x":"2012",
+							"y":30
+						},
+						{
+							"x":"2013",
+							"y":31
+						},
+					]
+				},
+				{
+					"name": "others",
+					"value":[
+						{
+							"x":"2010",
+							"y":100
+						},
+						{
+							"x":"2011",
+							"y":16
+						},
+						{
+							"x":"2012",
+							"y":20
+						},
+						{
+							"x":"2013",
+							"y":41
+						},
+					]
+				},
+			],
+		};
+
+```
 
 ## Consuming this library
 
