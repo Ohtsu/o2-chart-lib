@@ -935,16 +935,105 @@ $ npm install o2-chart-lib --save
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Choropleth01.png" width= "640" >
 
 
-  - ***Sample GraphData for *** 
+  - ***Sample GraphData for Force*** 
 
 ```json
+
+    forceDataJson = 
+		{
+			"groups": [
+				{"id": 1, "name": "Hokkaido"},
+				{"id": 2, "name": "Tohoku"},
+				{"id": 3, "name": "Kanto"},
+				{"id": 4, "name": "Chubu"},
+				{"id": 5, "name": "kinki"},
+				{"id": 6, "name": "Chugoku"},
+				{"id": 7, "name": "Shikoku"},
+				{"id": 8, "name": "Kyushu"},
+			],
+			"nodes": [
+				{"id": "Sapporo", "group": 1},
+				{"id": "Sendai", "group": 2},
+				{"id": "Morioka", "group": 2},
+				{"id": "Akita", "group": 2},
+				{"id": "Fukushima", "group": 2},
+				{"id": "Mito", "group": 3},
+				{"id": "Utsunomiya", "group": 3},
+				{"id": "Saitama", "group": 3},
+				{"id": "Chiba", "group": 3},
+				{"id": "Tokyo", "group": 3},
+				{"id": "Kofu", "group": 4},
+				{"id": "Nagano", "group": 4},
+				{"id": "Niigata", "group": 4},
+				{"id": "Toyama", "group": 4},
+				{"id": "Kanazawa", "group": 4},
+				{"id": "Fukui", "group": 4},
+				{"id": "Shizuoka", "group": 4},
+				{"id": "Nagoya", "group": 4},
+				{"id": "Gifu", "group": 4},
+				{"id": "Otsu", "group": 5},
+				{"id": "Kyoto", "group": 5},
+				{"id": "Osaka", "group": 5},
+				{"id": "Kobe", "group": 5},
+				{"id": "Nara", "group": 5},
+				{"id": "Kyoto", "group": 5},
+				{"id": "Tottori", "group": 6},
+				{"id": "Hiroshima", "group": 6},
+				{"id": "Matsue", "group": 6},
+				{"id": "Matsuyama", "group": 7},
+				{"id": "Tokushima", "group": 7},
+				{"id": "Kochi", "group": 7},
+				{"id": "Fukuoka", "group": 8},
+				{"id": "Nagasaki", "group": 8},
+				{"id": "Kumamoto", "group": 8},
+				{"id": "Naha", "group": 8},
+			],
+			"links": [
+            {"source": "Sendai", "target": "Sapporo", "value": 1},
+            {"source": "Morioka", "target": "Sapporo", "value": 1},
+            {"source": "Akita", "target": "Sapporo", "value": 1},
+            {"source": "Fukushima", "target": "Sapporo", "value": 1},
+            {"source": "Morioka", "target": "Sendai", "value": 10},
+            {"source": "Akita", "target": "Sendai", "value": 10},
+            {"source": "Fukushima", "target": "Sendai", "value": 10},
+            {"source": "Chiba", "target": "Tokyo", "value": 20},
+            {"source": "Utsunomiya", "target": "Tokyo", "value": 20},
+            {"source": "Mito", "target": "Tokyo", "value": 20},
+            {"source": "Saitama", "target": "Tokyo", "value": 30},
+            {"source": "Kofu", "target": "Tokyo", "value": 30},
+            {"source": "Nagano", "target": "Tokyo", "value": 30},
+            {"source": "Naha", "target": "Tokyo", "value": 30},
+            {"source": "Osaka", "target": "Tokyo", "value": 40},
+            {"source": "Sendai", "target": "Tokyo", "value": 40},
+            {"source": "Hiroshima", "target": "Tokyo", "value": 20},
+            {"source": "Shizuoka", "target": "Nagoya", "value": 10},
+            {"source": "Tokyo", "target": "Nagoya", "value": 40},
+            {"source": "Osaka", "target": "Nagoya", "value": 40},
+            {"source": "Kyoto", "target": "Nagoya", "value": 40},
+            {"source": "Kyoto", "target": "Osaka", "value": 30},
+            {"source": "Hiroshima", "target": "Osaka", "value": 20},
+            {"source": "Toyama", "target": "Kanazawa", "value": 10},
+            {"source": "Fukui", "target": "Kanazawa", "value": 10},
+            {"source": "Niigata", "target": "Kanazawa", "value": 10},
+            {"source": "Tottori", "target": "Kobe", "value": 10},
+            {"source": "Tottori", "target": "Hiroshima", "value": 10},
+            {"source": "Matsue", "target": "Hiroshima", "value": 10},
+            {"source": "Matsuyama", "target": "Hiroshima", "value": 10},
+            {"source": "Tokushima", "target": "Kochi", "value": 10},
+            {"source": "Matsuyama", "target": "Kochi", "value": 10},
+            {"source": "Nagasaki", "target": "Fukuoka", "value": 10},
+            {"source": "Kumamoto", "target": "Fukuoka", "value": 10},
+            {"source": "Naha", "target": "Fukuoka", "value": 10},
+               ]
+        };
+
 
 
 ```
 
-  - ***Visual for *** 
+  - ***Visual for Force*** 
 
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Force01.png" width= "640" >
 
 
   - ***Sample GraphData for *** 
