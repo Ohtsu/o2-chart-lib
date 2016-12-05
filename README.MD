@@ -607,19 +607,50 @@ $ npm install o2-chart-lib --save
 
 ```
 
-  - ***Visual for *** 
+  - ***Visual for GeoMap*** 
 
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/GeoMap01.png" width= "640" >
 
 
-  - ***Sample GraphData for *** 
+  - ***Sample GraphData for GeoOrthographic*** 
 
 ```json
+		geoOrthographicDataJson =
+		{
+			"map":{
+					"baseGeoDataUrl":"https://raw.githubusercontent.com/Ohtsu/data/master/o2-chart/world.geojson",
+					"keyDataName":"features",
+					"targetPropertyName":"properties.name",
+					"scale":160,
+					"colorNumber":10,
+					"rotate":{
+						"horizontal":210,
+						"vertical":5
+					},
+					"clipAngle":90,
+					"oceanColor":"navy",
+					"antarcticaColor":"white",
+			},
+			"data":[
+				{
+					"name":"Australia",
+					"color":"red"
+				},
+				{
+					"name":"Antarctica",
+					"color":"white"
+				},
+				{
+					"name":"Japan",
+					"color":"teal"
+				},
+			]
+		}
 
 
 ```
 
-  - ***Visual for *** 
+  - ***Visual for GeoOrthographic*** 
 
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
 
@@ -633,7 +664,7 @@ $ npm install o2-chart-lib --save
 
   - ***Visual for *** 
 
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/GeoOrthographic01.png" width= "640" >
 
 
   - ***Sample GraphData for *** 
