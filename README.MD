@@ -32,8 +32,7 @@ import { O2ChartComponent,ChartConst } from 'o2-chart-lib';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    O2ChartModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
