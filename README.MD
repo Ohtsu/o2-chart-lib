@@ -8,7 +8,7 @@ To install this library, run:
 $ npm install o2-chart-lib --save
 ```
 
-## Consuming your library
+## Consuming this library
 
 You can import o2-chart-lib library in any Angular application by running:
 
