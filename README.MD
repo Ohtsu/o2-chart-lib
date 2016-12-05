@@ -652,7 +652,7 @@ $ npm install o2-chart-lib --save
 
   - ***Visual for GeoOrthographic*** 
 
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Histogram01.png" width= "640" >
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/GeoOrthographic01.png" width= "640" >
 
 
   - ***Sample GraphData for *** 
