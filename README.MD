@@ -655,16 +655,42 @@ $ npm install o2-chart-lib --save
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/GeoOrthographic01.png" width= "640" >
 
 
-  - ***Sample GraphData for *** 
+  - ***Sample GraphData for Tree*** 
 
 ```json
+
+        treeDataJson =
+        {
+            "name": "Eve",
+            "children": [
+                { "name": "Cain" 
+                },
+                { 
+                    "name": "Seth",
+                    "children": [
+                        { "name": "Enos" },
+                        { "name": "Noam" }
+                    ]
+                },
+                { "name": "Abel" 
+                },
+                { 
+                    "name": "Awan",
+                    "children": [
+                        { "name": "Enoch" }
+                    ]
+                },
+                { "name": "Azura" 
+                },
+            ]
+        };
 
 
 ```
 
-  - ***Visual for *** 
+  - ***Visual for Tree*** 
 
-  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/GeoOrthographic01.png" width= "640" >
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/Tree01.png" width= "640" >
 
 
   - ***Sample GraphData for *** 
