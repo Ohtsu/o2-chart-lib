@@ -6,6 +6,9 @@ _o2-chart-lib_ is a chart library using d3.js (version 4) for Angular2 written b
 "Demo Page",
 <https://ohtsu.github.io/o2-chart/>
 
+"Sample Program for setting date",
+<https://github.com/ohtsu/o2-chart/>
+
 ## Overview 
    - _o2-chart-lib_ is a wrapper library of d3.js (version 4) for Angular2
    - 12 main charts are supported
