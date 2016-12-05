@@ -10,7 +10,7 @@ $ npm install o2-chart-lib --save
 
 ## Consuming your library
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
+You can import o2-chart-lib library in any Angular application by running:
 
 ```bash
 $ npm install o2-chart-lib
@@ -41,7 +41,7 @@ import { O2ChartComponent,ChartConst } from 'o2-chart-lib';
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Once the library is imported, you can use its component in your Angular application:
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
