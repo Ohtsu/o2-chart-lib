@@ -68,6 +68,137 @@ $ npm install o2-chart-lib --save
  
   <img src="https://raw.githubusercontent.com/Ohtsu/images/master/DisplayLayout01.png" width= "640" >
  
+ - ***Sample configData*** 
+
+```json
+		configData ={
+			"className":{
+				"axis":"axis",
+				"axisXBorder":"axis_x",
+				"axisXText":"axis-x-text",
+				"bar":"bar",
+				"barValue":"bar-value",
+				"line":"line",
+				"multiLinePrefix":"line-",
+				"grid":"grid",
+				"pie":"pie",
+				"pieInnerTitle": "pie-inner-title",
+				"pieInnerRadius":"total",
+				"histogram":"histogram",
+				"histogramBar":"histogram-bar",
+				"treemap":"treemap",
+				"treemapLabel":"treemap-label",
+				"packlayout":"packlayout",
+				"packlayoutLabel":"packlayout-label",
+			},
+			"label": {
+					"display":true,
+			},
+			"title": {
+				"display": true,
+				"name":"Title",
+				"className":"chart-title",
+				"height":30,
+				"leftMargin":-20,
+				"bottomMargin":10
+			},
+			"maxValue":{
+				"auto":true,
+				"x":100,
+				"y":100,
+			},
+			"legend": {
+				"display": true,
+				"position": "right",
+				"totalWidth":80,
+				"initXPos":5,
+				"initYPos":10,
+				"rectWidth":10,
+				"rectHeight":10,
+				"xSpacing":2,
+				"ySpacing":2
+			},
+			"color":{
+				"auto":true, // 
+				"defaultColorNumber":10,
+				"opacity":1.0,
+				"userColors":[
+					"blue",
+					"red",
+					"green",
+					"yellow",
+					"PaleGoldenrod",
+					"Khaki",
+					"DarkKhaki",
+					"Gold",
+					"Cornsilk",
+					"BlanchedAlmond",
+					"Bisque",
+					"NavajoWhite",
+					"Wheat",
+					"BurlyWood",
+					"Tan",
+					"RosyBrown",
+					"SandyBrown",
+					"Goldenrod",
+					"DarkGoldenrod",
+					"Peru",
+					"Chocolate"
+				],
+				"focusColor":"red",
+			},
+			"pie":{
+				"innerRadius": {
+					"percent":20,
+					"title":"Total"
+				},
+				"value":{
+					"display":true,
+				},	
+				"percent":{
+					"display":false,
+				}	
+			}, 	
+			"line": {
+				"legend":"lineEnd",
+				"interpolate" :"linear",
+			},
+			"grid":{
+				"x":{
+					"display":true,
+				},
+				"y":{
+					"display":true,
+				},
+			},
+			"margin":{
+				"top":30,
+				"left":30,
+				"right":10,
+				"bottom":20,
+				"between":5
+			},
+			"axis":{
+				"rotation":0,
+				"borderLineWidth":1,
+				"xLabel":{
+					"leftMargin":0,
+					"bottomMargin":5
+				},
+				"yLabel":{
+					"leftMargin":0,
+					"bottomMargin":0
+				},
+				
+			},
+			"animation":{
+				"enable":true,
+				"duration":4000,
+			},	
+		};
+```
+
+
  - **graphData**
 
  Each chart needs its own data in Json format. You can understand the format easily by referencing to the Json Data. For example, if you want to know Line chart data format, please refer to "this.lineDataJson" in app.components.ts.
