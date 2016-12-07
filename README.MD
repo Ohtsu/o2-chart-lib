@@ -45,6 +45,9 @@ $ npm install o2-chart-lib --save
 
 ### Step by Step Intallation for Angular-CLI
 
+_Video_,
+<https://youtu.be/LctP0mzZ8Tc>
+
 #### Install Angular-CLI
 
 ```bash
