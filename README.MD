@@ -43,33 +43,71 @@ $ npm install o2-chart-lib --save
 ```
 
 
+### Step by Step Intallation for Angular-CLI
 
-
-## Consuming this library
-
-You can import o2-chart-lib library in any Angular application by running:
+#### Install Angular-CLI
 
 ```bash
-$ npm install o2-chart-lib
+$ npm install -g angular-cli
 ```
 
-and then from your Angular `AppModule`:
+#### Create New Project
+
+```bash
+$ ng new sample-chart (Your project name)
+$ cd sample-chart 
+```
+#### Check Your Program
+
+If you start local server as follows, you can get the first page in your browser by accessing **http://localhost:4200**.
+
+
+```bash
+$ ng serve
+```
+
+  - ***First Page*** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/install/first-view-by-localserver01.png" width= "640" >
+
+#### Stop Local Server
+
+Input **Ctrl+C** and **y+Return** to stop the local server.
+
+
+#### Install o2-chart-lib
+
+```bash
+$ npm install o2-chart-lib --save
+```
+
+#### Modify app.module.ts
+
+```bash
+$ cd src/app
+```
+Change directory to "src/app", you will find **app.module.ts**.
+Modify this file as follows.
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { O2ChartComponent,ChartConst } from 'o2-chart-lib';
+import { O2ChartComponent,ChartConst } from 'o2-chart-lib'; // <= Add
 
 
 @NgModule({
   declarations: [
-    O2ChartComponent,
+    O2ChartComponent,  // <= Add
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -77,16 +115,337 @@ import { O2ChartComponent,ChartConst } from 'o2-chart-lib';
 export class AppModule { }
 ```
 
-Once the library is imported, you can use its component in your Angular application:
+#### Modify app.component.ts
+In the same directory, modify **app.component.ts** as follows. This example explains how to install **Bar Chart**. So **graphData** are only for **Bar Chart**. You can install other charts by changing **chartType** name and **graphData(JsonData)**.
 
-```xml
-<!-- You can now use your library component in app.component.html -->
+```typescript
+import { Component } from '@angular/core';
+import { ChartConst } from 'O2-chart-lib'; // <= Add
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'app works!';
+
+  // Add Start --------------------------------------------
+	chartType:string;
+	configData:any;
+	barDataJson:any;
+ 	barTypeName:string;
+
+
+	constructor() {
+		this.barTypeName 			= ChartConst.BAR_CHART_TYPE_NAME;
+		this.initilizeData();	
+	}
+
+	private initilizeData(){
+		this.configData ={
+			"className":{
+				"axis":"axis",
+				"axisXBorder":"axis_x",
+				"axisXText":"axis-x-text",
+				"bar":"bar",
+				"barValue":"bar-value",
+				"line":"line",
+				"multiLinePrefix":"line-",
+				"grid":"grid",
+				"pie":"pie",
+				"pieInnerTitle": "pie-inner-title",
+				"pieInnerRadius":"total",
+				"histogram":"histogram",
+				"histogramBar":"histogram-bar",
+				"treemap":"treemap",
+				"treemapLabel":"treemap-label",
+				"packlayout":"packlayout",
+				"packlayoutLabel":"packlayout-label",
+			},
+			"label": {
+					"display":true,
+			},
+			"title": {
+				"display": true,
+				"name":"Title",
+				"className":"chart-title",
+				"height":30,
+				"leftMargin":-20,
+				"bottomMargin":10
+			},
+			"maxValue":{
+				"auto":true,
+				"x":100,
+				"y":100,
+			},
+			"legend": {
+				"display": true,
+				"position": "right",
+				"totalWidth":80,
+				"initXPos":5,
+				"initYPos":10,
+				"rectWidth":10,
+				"rectHeight":10,
+				"xSpacing":2,
+				"ySpacing":2
+			},
+			"color":{
+				"auto":true, // 
+				"defaultColorNumber":10,
+				"opacity":1.0,
+				"userColors":[
+					"blue",
+					"red",
+					"green",
+					"yellow",
+					"PaleGoldenrod",
+					"Khaki",
+					"DarkKhaki",
+					"Gold",
+					"Cornsilk",
+					"BlanchedAlmond",
+					"Bisque",
+					"NavajoWhite",
+					"Wheat",
+					"BurlyWood",
+					"Tan",
+					"RosyBrown",
+					"SandyBrown",
+					"Goldenrod",
+					"DarkGoldenrod",
+					"Peru",
+					"Chocolate"
+				],
+				"focusColor":"red",
+			},
+			"pie":{
+				"innerRadius": {
+					"percent":20,
+					"title":"Total"
+				},
+				"value":{
+					"display":true,
+				},	
+				"percent":{
+					"display":false,
+				}	
+			}, 	
+			"line": {
+				"legend":"lineEnd",
+				"interpolate" :"linear",
+			},
+			"grid":{
+				"x":{
+					"display":true,
+				},
+				"y":{
+					"display":true,
+				},
+			},
+			"margin":{
+				"top":30,
+				"left":30,
+				"right":10,
+				"bottom":20,
+				"between":5
+			},
+			"axis":{
+				"rotation":0,
+				"borderLineWidth":1,
+				"xLabel":{
+					"leftMargin":0,
+					"bottomMargin":5
+				},
+				"yLabel":{
+					"leftMargin":0,
+					"bottomMargin":0
+				},
+				
+			},
+			"animation":{
+				"enable":true,
+				"duration":4000,
+			},	
+		};
+
+		this.barDataJson =
+		{
+			"series":[
+				"English",
+				"Math"	
+			],
+			"data":[
+				{
+					"x": "suzuki",
+					"y": [92,73],
+				},
+				{
+					"x": "inoue",
+					"y": [69,45],
+				},
+				{
+					"x": "sato",
+					"y": [70,100],
+				},
+				{
+					"x": "tanaka",
+					"y": [43,66],
+				},
+				{
+					"x": "ida",
+					"y": [60,70],
+				},
+				{
+					"x": "kato",
+					"y": [55,63],
+				},
+			],
+		};
+  }
+
+  // Add End --------------------------------------------
+
+}
+
+```
+
+
+#### Modify app.component.html
+In the same directory, modify **app.component.html** as follows. 
+
+```html
+
 <h1>
   {{title}}
 </h1>
-<!-- You need specify chart type,config data, graph data,width and height as follows -->
-<o2-chart [chartType]="barTypeName" [configData]="configData"  [graphData]="barDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></o2-chart>
+<!-- Add Start -->
+  <h2>Bar</h2>
+  <o2-chart [chartType]="barTypeName" [configData]="configData"  [graphData]="barDataJson" [svgWidth]="'600'" [svgHeight]="'400'"></o2-chart>
+<!-- Add End -->
+
+
 ```
+
+#### Modify index.html
+Change to the parent directory, you will find **index.html**. Modify the file as follows. 
+
+```bash
+$ cd ..
+```
+
+
+```html
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SampleChart</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!-- Add Start -->
+
+  	<style>
+		.line {fill:none; stroke:black;stroke-width: 1.5;}
+		.line-0 {fill:none; stroke:#1f77b4;stroke-width: 1.5;stroke-dasharray:4,10;}
+		.line-1 {fill:none; stroke:#ff7f0e;stroke-width: 1.5;stroke-dasharray:2,5.10;}
+		.line-2 {fill:none; stroke:#2ca02c;stroke-width: 1.5;}
+		.line-3 {fill:none; stroke:#d62728;stroke-width: 1.5;}
+		.line-4 {fill:none; stroke:#9467bd;stroke-width: 1.5;}
+		.line-5 {fill:none; stroke:#8c564b;stroke-width: 1.5;}
+		.line-6 {fill:none; stroke:#e377c2;stroke-width: 1.5;}
+		.line-7 {fill:none; stroke:#7f7f7f;stroke-width: 1.5;}
+		.line-8 {fill:none; stroke:#bcbd22;stroke-width: 1.5;}
+		.line-9 {fill:none; stroke:b#17becf;stroke-width: 1.5;}
+		
+		.bar { fill:#aaa; stroke:white;stroke-width: 1;}
+		.bar-value { fill:black;font-size: 8pt;}
+		.name { font-size: 10pt;text-anchor: middle}
+		path {fill:white;stroke:black;stroke-width:0.5;}
+		.axis text {
+			font-family: sans-serif;
+			font-size: 11px;
+		}
+		.axis path,
+		.axis line {
+			fill: none;
+			stroke: black;
+		}
+		.axis_x line {
+			fill: none;
+			stroke: black;
+		}
+		.chart-title { fill:red;font-size: 18pt;text-anchor: middle;}
+		.histogram-bar{fill:blue; stroke:white;stroke-width: 1;}
+		.axis-x-text{ fill:blue;font-size: 12pt;}
+		.treemap { stroke:black;fill:#777}		
+		.treemap-label { font-size: 10pt;text-anchor: middle}
+		.packlayout{ stroke:black;}
+		.packlayout-label{ font-size: 10pt;text-anchor: middle}
+		.pie-inner-title {font-size:9pt;text-anchor:middle;}
+		.pieNum {font-size:10pt;text-anchor:middle;}
+		.grid {stroke:gray;stroke-dasharray: 4,2;shape-rendering:crispEdges}
+
+		.tree-node circle {
+			fill: #fff;
+			stroke: steelblue;
+			stroke-width: 3px;
+		}
+		.tree-node text { 
+			font: 12px sans-serif; 
+		}
+		.tree-node-internal text {
+			text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+		}
+		.tree-node-link {
+			fill: none;
+			stroke: #ccc;
+			stroke-width: 2px;
+		}
+		.force-links line {
+		stroke: #999;
+		stroke-opacity: 0.6;
+		}
+
+		.force-nodes circle {
+		stroke: #fff;
+		stroke-width: 1.5px;
+		}
+
+		
+	</style>
+
+<!-- Add End -->
+
+
+</head>
+<body>
+  <app-root>Loading...</app-root>
+</body>
+</html>
+
+
+```
+
+#### Restart local server
+Restart the local server as follows. 
+
+```bash
+$ ng serve
+```
+
+And you will get a simple **Bar Chart** in your browser by accessing **http://localhost:4200**.
+
+
+  - ***First Bar Chart*** 
+
+  <img src="https://raw.githubusercontent.com/Ohtsu/images/master/install/first-bar-chart01.png" width= "640" >
+
+
 
 
 ## Chart Data
