@@ -1,6 +1,6 @@
 {
   "name": "o2-chart-lib",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc",
