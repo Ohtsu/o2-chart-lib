@@ -37,6 +37,12 @@ _Sample Program for setting config data_,
 
 
 ## Installation
+If you have not installed "Typings"(Type definition management tool for TypeScript) yet globally, install "Typings" at first as follows.
+
+```bash
+$ npm install -g typings
+```
+
 
 To install this library, run:
 
