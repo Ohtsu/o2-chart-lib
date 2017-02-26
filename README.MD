@@ -56,10 +56,10 @@ $ npm install o2-chart-lib --save
 _Video_,
 <https://youtu.be/LctP0mzZ8Tc>
 
-#### Install Angular-CLI
+#### Install @angular/cli
 
 ```bash
-$ npm install -g angular-cli
+$ npm install -g @angular/cli
 ```
 
 #### Create New Project
