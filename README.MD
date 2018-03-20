@@ -1561,6 +1561,11 @@ And you will get a simple **Bar Chart** in your browser by accessing **http://lo
 - "D3 Tips and Tricks v4.x",by Malcolm Maclean,Leanpub,
 <https://leanpub.com/d3-t-and-t-v4/read>
 
+- "Angular5 Custom Library: The definitive, step-by-step guide", 
+<https://www.udemy.com/draft/1461368/learn/v4/content>
+
+
+
 
 ## Change Log
 
